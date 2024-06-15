@@ -1,0 +1,32 @@
+###
+POST http://localhost:9000/api/empleado HTTP/1.1
+Content-Type: application/json
+ 
+{
+  "id": "63",
+  "fecha_ingreso": "2024-06-05",
+  "nombre": "Daniela",
+  "salario": "2.500.000"
+}
+
+
+###
+GET http://localhost:9000/api/empleado HTTP/1.1
+
+### 
+DELETE http://localhost:9000/api/empleado/666db1376160b8b95ed4bba1 url HTTP/1.1
+
+
+###
+GET http://localhost:9000/api/solicitud
+
+###
+POST http://localhost:9000/api/solicitud HTTP/1.1
+Content-Type: application/json
+ 
+{
+ "codigo":"1402",
+ "descripcion": "No me salen las llamadas",
+ "resumen":"la aplicacion de llamadas no funciona",
+ "id_empleado": "666db1636160b8b95ed4bba4"
+}
